@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <form>
+            <label>first name:-</label>
+            <input type="text" id="fname"> <br>
+            <label>last name:-</label>
+            <input type="text" id="lname"><br>
+            <button type="button" onclick="submitbtn()">SUBMIT</button>    
+        </form>
+        <h1 id="A1"></h1>
+        <h1 id="A2"></h1>
+        <script>
+
+            function submitbtn(){
+            
+                let first_name=document.getElementById("fname").value;
+                let last_name=document.getElementById("lname").value;
+        
+                document.getElementById("A1").innerHTML="First Name = "+first_name;
+                document.getElementById("A2").innerHTML="Last Name = "+last_name;       
+            }
+            </script>
+    </body>
+
+   
+
+</html>
